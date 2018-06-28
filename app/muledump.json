@@ -60,7 +60,26 @@
             "encryptionTestKey": ""
         },
         "accounts": {
-           
+            "tjl32029@ckoie.com": {
+                "banned": "false",
+                "loginOnly": "false",
+                "autoReload": "false",
+                "cacheEnabled": "false",
+                "giftsBugAck": "false",
+                "testing": "false",
+                "password": "q1w2e3r4q1w2e3r4",
+                "ign": "PleaseReGrabData"
+            },
+            "faintmako123@yopmail.com": {
+                "banned": "false",
+                "loginOnly": "false",
+                "autoReload": "false",
+                "cacheEnabled": "false",
+                "giftsBugAck": "false",
+                "testing": "false",
+                "password": "q1w2e3r4q1w2e3r4",
+                "ign": "PleaseReGrabData"
+            }
         }
     },
     "groups": {

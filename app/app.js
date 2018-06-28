@@ -2,7 +2,7 @@ var express = require("express");
 var fs = require("fs");
 var request = require('request');	
 var opn = require('opn');
-var mkGen = require('./mag/MakoAccountGen');
+var mkCreator = require('./mac/MakoAccountCreator');
 var bodyParser = require('body-parser')
 var app = express();
 var router = express.Router();
@@ -59,7 +59,7 @@ router.post("/create",function(req,res)
 {
 	var accountEmail = req.body.email;
 	var accountPassword = req.body.password;
-	mkGen.createAccount(req,res,{email:accountEmail, password:accountPassword});
+	mkCreator.createAccount(req,res,{email:accountEmail, password:accountPassword});
 });
 
 app.use("/",router);

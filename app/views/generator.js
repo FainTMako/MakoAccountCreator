@@ -1,5 +1,5 @@
 var accounts = {
-			"tjl32029@ckoie.com": getMDAccountOptions()
+			
 		};
 		
 		function getMDAccountOptions()

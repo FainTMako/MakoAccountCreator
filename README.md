@@ -21,3 +21,16 @@ npm install
 npm start
 ```
 the account creator should start and open a new tab in your default browser.
+
+#MuleDump Setup!
+You need to be using the new muledump 
+https://github.com/jakcodex/muledump/wiki/Installation-and-Setup
+Once you are using that muledump and you have your accounts in there or not
+You need to make a full backup of your muledump to a json file
+Setup -> Backups -> Create new Backup
+Delete the muledump.json file that is in the root of the project
+paste in your newly created muledump json backup that you downloaded.
+Rename it to muledump.json
+
+Thats it! you should be good to go. If you have the use muledump option checked it will save new accounts to that file.
+You can later import the edited muledump json back into your muledump web interface from the same backup screen.
