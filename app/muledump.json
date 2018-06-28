@@ -1,0 +1,279 @@
+{
+    "meta": {
+        "BackupDate": "2018-06-28T02:14:38.051Z",
+        "protected": false,
+        "auto": false
+    },
+    "config": {
+        "accountAssistant": 1,
+        "accountLoadDelay": 0,
+        "accountsPerPage": 10,
+        "alertNewVersion": 1,
+        "animations": 1,
+        "autocomplete": true,
+        "automaticBackups": true,
+        "autoReloadDays": 1,
+        "backupAssistant": 14,
+        "corsAssistant": 1,
+        "debugging": true,
+        "enabled": true,
+        "encryption": false,
+        "errors": true,
+        "ga": true,
+        "gaErrors": true,
+        "gaOptions": true,
+        "gaPing": true,
+        "gaTotals": true,
+        "giftChestWidth": 0,
+        "groupsMergeMode": 2,
+        "hideHeaderText": false,
+        "lazySave": 10000,
+        "longpress": 1000,
+        "lowStorageSpace": true,
+        "maximumBackupCount": 5,
+        "menuPosition": 2,
+        "mqBGTimeout": 180,
+        "mqConcurrent": 1,
+        "mqDisplayIgn": false,
+        "mqKeepHistory": 100,
+        "mulelogin": 0,
+        "muleMenu": true,
+        "nomasonry": 0,
+        "pagesearch": 2,
+        "preventAutoDownload": true,
+        "rowlength": 7,
+        "tooltip": 500,
+        "totalswidth": 0
+    },
+    "version": {
+        "major": 9,
+        "minor": 3,
+        "patch": 0
+    },
+    "accounts": {
+        "meta": {
+            "created": 1530152012192,
+            "modified": 1530152048476,
+            "format": 1,
+            "version": 4,
+            "encryption": false,
+            "encryptionTestKey": ""
+        },
+        "accounts": {
+           
+        }
+    },
+    "groups": {
+        "format": 1,
+        "groupList": {},
+        "groupOrder": []
+    },
+    "options": {
+        "email": false,
+        "accountName": true,
+        "accountinfo": false,
+        "chdesc": true,
+        "chsortchoice": true,
+        "chsort": "0",
+        "equipment": true,
+        "hpmp": true,
+        "inv": true,
+        "vaults": true,
+        "vaultlayout": "0",
+        "stats": true,
+        "sttype": "base",
+        "pcstats": true,
+        "goals": true,
+        "backpack": true,
+        "gifts": false,
+        "wawawa": false,
+        "totals": true,
+        "totalsGlobal": false,
+        "famefilter": false,
+        "fameamount": "-1",
+        "feedfilter": false,
+        "feedpower": "-1",
+        "sbfilter": false,
+        "nonsbfilter": false,
+        "utfilter": false,
+        "stfilter": false,
+        "disabled": [],
+        "totalsFilter-empty": true,
+        "totalsFilter-swords": true,
+        "totalsFilter-daggers": true,
+        "totalsFilter-bows": true,
+        "totalsFilter-tomes": true,
+        "totalsFilter-shields": true,
+        "totalsFilter-lightarmor": true,
+        "totalsFilter-heavyarmor": true,
+        "totalsFilter-wands": true,
+        "totalsFilter-rings": true,
+        "totalsFilter-potions": true,
+        "totalsFilter-potionssb": true,
+        "totalsFilter-candies": true,
+        "totalsFilter-portkeys": true,
+        "totalsFilter-textiles": true,
+        "totalsFilter-skins": true,
+        "totalsFilter-petstones": true,
+        "totalsFilter-finespirits": true,
+        "totalsFilter-testing": true,
+        "totalsFilter-keys": true,
+        "totalsFilter-helpfulconsumables": true,
+        "totalsFilter-unlockers": true,
+        "totalsFilter-eventitems": true,
+        "totalsFilter-marks": true,
+        "totalsFilter-tarot": true,
+        "totalsFilter-treasures": true,
+        "totalsFilter-assistants": true,
+        "totalsFilter-petfood": true,
+        "totalsFilter-other": true,
+        "totalsFilter-spells": true,
+        "totalsFilter-seals": true,
+        "totalsFilter-cloaks": true,
+        "totalsFilter-robes": true,
+        "totalsFilter-quivers": true,
+        "totalsFilter-helms": true,
+        "totalsFilter-staves": true,
+        "totalsFilter-poisons": true,
+        "totalsFilter-skulls": true,
+        "totalsFilter-traps": true,
+        "totalsFilter-orbs": true,
+        "totalsFilter-prisms": true,
+        "totalsFilter-scepters": true,
+        "totalsFilter-katanas": true,
+        "totalsFilter-stars": true,
+        "totalsFilter-eggs": true
+    },
+    "muledump": {
+        "chsortcustom": {
+            "format": 1,
+            "accounts": {}
+        },
+        "whitebagTracker": {
+            "accounts": {},
+            "totals": []
+        },
+        "totals": {
+            "configSets": {
+                "active": "Default",
+                "favorites": [
+                    "Default"
+                ],
+                "settings": {
+                    "Default": {
+                        "slotOrder": [
+                            42010,
+                            42011,
+                            42012,
+                            1,
+                            2,
+                            3,
+                            17,
+                            8,
+                            24,
+                            5,
+                            16,
+                            12,
+                            13,
+                            18,
+                            22,
+                            15,
+                            20,
+                            11,
+                            19,
+                            21,
+                            4,
+                            23,
+                            25,
+                            7,
+                            6,
+                            14,
+                            9,
+                            42013,
+                            42014,
+                            42015,
+                            42016,
+                            42017,
+                            42018,
+                            42019,
+                            42020,
+                            42021,
+                            42022,
+                            42023,
+                            42024,
+                            42025,
+                            42026,
+                            42027,
+                            42028,
+                            42029,
+                            50000,
+                            10,
+                            26,
+                            0
+                        ],
+                        "accountFilter": [],
+                        "itemFilter": [],
+                        "slotSubOrder": {},
+                        "disabled": [],
+                        "sortingMode": "standard",
+                        "totalsGlobal": false,
+                        "famefilter": false,
+                        "fameamount": "-1",
+                        "feedfilter": false,
+                        "feedpower": "-1",
+                        "sbfilter": false,
+                        "nonsbfilter": false,
+                        "utfilter": false,
+                        "stfilter": false
+                    }
+                }
+            }
+        }
+    },
+    "userid": "00000000000000000000",
+    "acknowledge": {
+        "assistants": {}
+    },
+    "additional": {
+        "mulequeue": {
+            "state": {
+                "date": 1530152078051,
+                "state": {
+                    "paused": false,
+                    "queuePeak": 0,
+                    "timePerTaskAverage": 1316,
+                    "lastTaskFinished": "2018-06-28T02:14:19.620Z"
+                },
+                "queue": []
+            },
+            "history": {
+                "data": [
+                    {
+                        "action": "reload",
+                        "cache_only": false,
+                        "ignore_cache": true,
+                        "time": "2018-06-28T02:14:19.621Z",
+                        "creation": "2018-06-28T02:14:18.578Z",
+                        "finish": "2018-06-28T02:14:19.620Z",
+                        "state": "finished",
+                        "guid": "flaintmako@gmail.com",
+                        "ign": "Laen",
+                        "status": "ok",
+                        "runtime": "0.63",
+                        "waited": 1
+                    }
+                ],
+                "stats": {
+                    "ok": 1,
+                    "error": 0,
+                    "cors": 0,
+                    "accountInUse": 0,
+                    "banned": 0,
+                    "cache": 0,
+                    "rateLimited": 0,
+                    "otherError": 0
+                }
+            }
+        }
+    }
+}
