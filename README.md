@@ -16,10 +16,11 @@ npm start
 ##### Git clone installation - Allows you to upgrade using git pull at any time
 This requires that you have git installed on your machine and that you can run git from the command line
 cloning this repo will create a folder called MakoAccountCreator
-
-`git clone https://github.com/FainTMako/MakoAccountCreator.git`
-`cd MakoAccountCreator`
-`npm install'
-`npm start`
+```javascript
+	git clone https://github.com/FainTMako/MakoAccountCreator.git
+	cd MakoAccountCreator
+	npm install
+npm start
+```
 
 the account creator should start and open a new tab in your default browser.
