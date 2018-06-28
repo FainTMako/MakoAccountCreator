@@ -1,0 +1,13 @@
+{
+  "name": "MakoAccountGen",
+  "version": "0.0.1",
+  "scripts": {
+    "start": "node ./app/app.js"
+  },
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "express": "latest",
+    "request": "^2.87.0",
+    "request-promise": "^4.2.2"
+  }
+}

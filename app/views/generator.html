@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>MakoAccountGenerator</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	</head>
+	<body>
+		<div class="container">
+			<div>
+				<h1>MakoAccountGenerator</h1>
+				<p class="lead">This app is open source. If you dont like it or want it changed, contribute!</p>
+			</div>
+			<div class="form-check">
+				<input class="form-check-input" type="checkbox" name="alert" id="alert" value="option1">
+				<label class="form-check-label" for="alert">Alert on errors</label>
+			</div>
+			
+			<div class="form-check">
+				<input class="form-check-input" type="checkbox" name="useMD" id="useMD" value="option1" checked>
+				<label class="form-check-label" for="useMD">Use MuleDump</label>
+			</div>
+			<div>
+				<h1>Target account list</h1>
+				<textarea id="accountList" rows="20" cols="50" placeholder="Put accounts in here in the following format account1@gmail.com:account1PasswordHere account2@gmail.com:account2PasswordHere"></textarea>
+				<button id="createAccountButton" disabled>Create accounts</button>
+			</div>
+		  
+			<div>
+				<h1>Status Log</h1>
+				<textarea id="statusLog" rows="20" cols="50" placeholder="Status of account creations will be put here" readonly></textarea>
+			</div>
+
+		</div><!-- /.container -->
+ 
+		<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+		<!-- Include all compiled plugins (below), or include individual files as needed -->
+		<!-- Latest compiled and minified JavaScript -->
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+		<script>
+		$(document).ready(function(){
+		
+			$('#accountList').bind('input propertychange', function() {
+				if($('#accountList').val().includes(":") && $('#accountList').val().includes("@")){
+					
+					$("#createAccountButton").prop("disabled",false);
+				}
+				else
+					$("#createAccountButton").prop("disabled",true);
+			});
+			
+			$("button").click(function(){
+				logString("-----------------------------------------");
+				let accountList = document.getElementById("accountList").value;
+				console.log("got account list. it is: " + accountList);
+			
+				console.log("sending post");
+				arrayOfLines = accountList.match(/[^\r\n]+/g);
+				for(line of arrayOfLines){
+				
+					if(line.includes(":") && line.includes("@")){
+						let email = line.split(":")[0];
+						let password = line.replace(email + ":", "");
+						let postData = {
+							email: email,
+							password: password
+						};
+						console.log("creating account: " + email + " : " + password);
+						if(password.length > 7)
+							$.post("create", postData, function(data){createAccountHandler(email,password,data)});
+						else
+						{
+
+							logString("Error could not create account: " + email + " the password was too short it must be atleast 8 characters");
+						}
+					}
+				}
+
+			});
+			
+			function createAccountHandler(email,password,data)
+			{
+				if(!data.toLowerCase().includes("error"))
+				{
+					accountCreated(email,password,data);
+				}
+				else
+				{
+					accountCreationFailed(email,password,data);
+				}
+				logString("-----------------------------------------");
+			}
+			
+			function accountCreationFailed(email,password, webResult)
+			{
+				logString("Account creation failed for: " + email + " reason: " + webResult);
+			}
+			
+			function accountCreated(email, password, webResult)
+			{
+				logString("Successfully created account : " + email);
+				if(document.getElementById('useMD').checked) {
+					alert("Saving to muledump:" + email);
+				}
+			}
+
+			function logString(stringData)
+			{
+				if(stringData.toLowerCase().includes("error"))
+				{
+					if(document.getElementById('alert').checked) {
+						alert("Error: : " + stringData);
+					} 
+				}
+				$("#statusLog").val($("#statusLog").val() + '\n' + stringData);
+			}
+		});
+		</script>
+</body>
+</html>
