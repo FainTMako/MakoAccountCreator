@@ -7,7 +7,7 @@ var app = express();
 var router = express.Router();
 var path = __dirname + '/views/';
 var port = 4420;
-var production = false;
+var production = true;
 
 app.use( bodyParser.json() );       // to support JSON-encoded bodies
 
