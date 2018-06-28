@@ -6,8 +6,7 @@ Additionally you will need your environment variables set so that you can run no
 
 
 #####  Simple installation - Quick but will be harder to update
-Right click this url and click save as:
-https://github.com/FainTMako/MakoAccountCreator/archive/master.zip
+[Download zip](https://github.com/FainTMako/MakoAccountCreator/archive/master.zip)
 extract zip into destination of your choice
 If you are on windows you can run the bat file: runWindows.bat
 otherwise in the project root run:
